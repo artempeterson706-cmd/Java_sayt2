@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: chartreuse;
+}
