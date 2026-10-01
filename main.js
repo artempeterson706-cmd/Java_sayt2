@@ -11,19 +11,19 @@ const root = document.getElementById('wrapper')
 
 
 function objToHtml(sizeObj) {
-    const rootEl = document.createElement('div')
-    rootEl.classList.add('box') 
+    const root_1 = document.createElement('div')
+    root_1.classList.add('box') 
 
-    rootEl.style.width = `${sizeObj.width}px`
-    rootEl.style.height = `${sizeObj.height}px`
+    root_1.style.width = `${sizeObj.width}px`
+    root_1.style.height = `${sizeObj.height}px`
 
-    return rootEl
+    return root_1
 }
 
 
 
 for (let i = 0; i < sizes.length; i++) {
-    const currentSizeObj = sizes[i]
-    const currentSizeHTML = objToHtml(currentSizeObj)
-    root.appendChild(currentSizeHTML)
+    const razmer = sizes[i]
+    const blok = objToHtml(razmer)
+    root.appendChild(blok)
 }
